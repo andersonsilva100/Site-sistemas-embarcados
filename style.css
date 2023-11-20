@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+body{
+    position: relative;
+}
+.container nav{
+    position: relative;
+    background-color:#c3c8c4;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;  
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+.logotipo{
+    
+    display:flex;
+    margin:0 60px; 
+    
+}
+ 
+.logotipo h1{
+    display:flex;
+    align-items: center;
+}
+
+img{
+    width :100px;
+    height:100px;
+    
+    
+}
+
+.redessociais {
+    
+    width:10%; 
+}
+.redessociais button{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.lista ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.lista ul a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    color:rgb(31, 34, 19);
+}
+
+.lista ul li{
+    display:inline-block;
+    width: 140px;
+    
+}
+
+.lista a:hover{
+    color: #2F4F4F;
+    }
+
+
+.container2{
+    background-image: url('imagens/logomaiin.jpg');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    position: absolute;
+    /*border: 1px solid rgb(43, 214, 108);*/
+    width: 100%;
+    height: 80vh;
+}
+
+.secao_A{
+    position: relative;
+    /*border: 1px solid rgb(140, 38, 241);*/
+    display:inline-block;
+    
+    
+    width: 100%;
+    height: 50vh;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    margin: 35px;
+    /*border: 1px solid rgb(243, 17, 187);*/
+    width: 70%;
+    height: 15%;
+}
+
+.titulo-1{
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fefae0;
+    font-size: 30pt;
+    background-color: #283618;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.product-image {
+    position:relative;
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    /*border: 2px solid rgb(19, 18, 20);*/
+  
+  }
+
+  
+
+
+
+#img-1 {
+    background-image: url('imagens/3dlogomanut.png');
+    height: 60px;
+    width: 60px;
+ 
+  }
+
+  #img-2 {
+    background-image: url('imagens/logonuvem.png');
+    height: 60px;
+    width: 60px;
+ 
+  }
+ 
+  #img-3 {
+    background-image: url('imagens/economia.png');
+    height: 60px;
+    width: 60px;
+ 
+  }
+
+
+  #img-4 {
+    background-image: url('imagens/laudos.png');
+    height: 60px;
+    width: 60px;
+ 
+  }
+
+  #img-5 {
+    background-image: url('imagens/logodiagn.png');
+    height: 60px;
+    width: 60px;
+ 
+  }
+
+.icone-mobile{
+display:none;
+}
+
+.menu-mobile{
+    display:none;
+}
+
+
+
+@media screen and (max-width:730px){
+    .menu-mobile{display: block};
+    .menu-mobile ul{display:none};
+    .lista{display:none};
+    .redessociais{display: none};
+    .icone-mobile{display:block};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*position :relative --- movimenta a posição do elemento baseado na posição original acessa as 4 propiedades top, right,botton,left  */
+/*position :absolute --- sai do fluxo normal do html e fica no seu propio fluxo absoluto */
+/*position :fixed  ----  fixa o elemento msmo rolando a página e ingnora o fluxo dos outros elementos*/
+/*posiion: sticky  ---- (grudento) trava a posição do elemento e depois ao rolar a página se torna estatico*/
+
+   
+/*display:none           ---- Elemento será ocultado  */
+/*display:hidden         ---- Elemento será ocultado mas ocupará  espaço */
+/*display:block          ---- Apresentar o elemento na vertical desconsiderando os elementos ao lado e  margin dele vai ate o final da tela*/
+/*display:inline         ---- Apresenta os elementos usados em texto no formato horizontal desconsiderando alguns atributos do css*/ 
+/*display:inline-block   ---- tem as propiedades do inline porem não ocupa o tamanho total da linha */
+/*display:flex           ---- flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas. Essas propriedades devem ser usadas no elemento que é um flex container.
+/*
+Propriedades de um Flex Container
+
+justify-content:
+
+Essa prorpiedade ajusta horizontalmente os elementos filhos do flex container
+
+flex-start: É o valor padrão. Os elementos ficam grudados um do lado do outro à esquerda do flex container.
+flex-end: Os elementos ficam grudados um do lado do outro à direita do flex container.
+center: Os elementos ficam grudados um do lado do outro no meio do flex container.
+space-between: O primeiro elemento fica totalmente à esquerda do flex container e o último fica totalmente à direita. O restante dos elementos ficam distribuídos com um espaçamento igual entre eles.
+space-around: Cada elemento fica com um espaçamento igual em volta dele mesmo. Isso quer dizer que o primeiro elemento vai ter um espaçamento maior à direita do que à esquerda porque vai somar com o espaçamento à esquerda do segundo elemento.
+space-evenly: Corrige o "problema" do valor acima. Os elementos terão um espaçamento igual em ambos os lados.
+
+
+align-items:
+
+Essa propriedade ajusta verticalmente os elementos filhos do flex container
+
+stretch: É o valor padrão. Os elementos se "esticam" para que todos fiquem com a mesma altura.
+flex-start: Os elementos ficam todos alinhados com o topo do flex container.
+flex-end: Os elementos ficam todos alinhados com a base do flex container.
+center: Os elementos ficam todos alinhados com o meio do flex container.
+baseline: Os elementos ficam alinhados com base do conteúdo textual de cada um deles.
+flex-wrap:
+*/
+
+/*align-items     ---- controla alinhamento dos itens do container pelo alinhamento do eixo horizontal */
+/*justify-content ---- controla alinhamento dos itens do container pelo alinhamento do eixo vertical   */
+
+/* Elementos
+O Flexbox é um módulo completo e não uma única propriedade; algumas delas devem ser declaradas no container (o elemento-pai, que chamamos de flex container), enquanto outras devem ser declaradas nos elementos-filhos (os flex itens).
+Se o leiaute "padrão" é baseado nas direções block e inline, o leiaute Flex é baseado em direções "flex flow". Veja abaixo um diagrama da especificação, explicando a ideia central por trás do leiaute Flex. */
+
+/*https://brasil.uxdesign.cc/os-9-sites-de-paletas-de-cores-que-todo-ui-designer-precisa-conhecer-3742480ef761  ---site de cores web desing */ 
+/* https://www.istockphoto.com/br/ilustra%C3%A7%C3%B5es/preto-e-branco-desenho-de-controle   ---icones */
+/* https://www.istockphoto.com/br/ilustra%C3%A7%C3%B5es/preto-e-branco-desenho-de-controle */
