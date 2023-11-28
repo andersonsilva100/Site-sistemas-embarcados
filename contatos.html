@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/97b2a81a3f.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- controla dimensões da janela de visualização e o nível de amplificação ao carregar a página,rederização para formatos de celulares-->
+    <link rel="stylesheet" href="style.css"><!-- Link do CSS ao documento index-->
+    
+    <title> Formulário de Contato</title>
+
+
+  </head>
+    <!-- Isso é um comentario-->
+     <body>
+        <header> 
+            <div class="container"> 
+                <nav> 
+                   <div class="logotipo">  <img src="imagens/logo1.jpeg" > <h1> Embedded</h1> </div>  
+      
+                  <div class="lista">
+                    <ul>
+                       
+                       <li><a href="index.html" id="home">HOME</a></li> <!--Elementos direcionados a uma lista de produtos-->
+                       <li><a href="sobre.html" id="sobre">SOBRE</a></li>
+                       <li><a href="projetos.html" id="projetos">PROJETOS</a></li>
+                       <li><a href="contatos.html" id="contatos">CONTATOS</a></li>
+                    
+                     </ul> 
+                  </div> 
+                  <div class="redessociais">
+                     <button><i class="fa-brands fa-tiktok"></i> </button>
+                     <button><i class="fa-brands fa-facebook"></i> </button>         
+                  </div> 
+                  <div class="icone-mobile">
+                     <button> <i class="fa-solid fa-bars"></i></button>
+                  </div>
+                  <div class="menu-mobile">
+                     <ul>
+                       
+                       <li><a href="index.html" id="home">HOME</a></li> <!--Elementos direcionados a uma lista de produtos-->
+                       <li><a href="sobre.html" id="sobre">SOBRE</a></li>
+                       <li><a href="projetos.html" id="projetos">PROJETOS</a></li>
+                       <li><a href="contatos.html" id="contatos">CONTATOS</a></li>
+                    
+                     </ul> 
+                  </div>
+                </nav>
+              </div>  
+        </header>
+     <main class="container5">    
+        <h1 class="titulo-1"> ENTRE EM CONTATO</h1>
+        <section class="secao_e">
+          <form id="contactForm">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+    
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+    
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+    
+              <button id="enviar_email" type="button" onclick="submitForm()">Enviar</button>
+          </form>
+          <div id="info_contatos">
+            <h2> E-mail: engenhariaembarcada@gmail.com</h2>
+            <h2> Telefone do escritório: +55 (11) 96763-4756 </h2>
+            <h2> Endereço: Rua Jim Clark, Nº54</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2956367301813!2d-46.51392112534109!3d-23.59372806278081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce678ed51ac8d9%3A0xdd27618a5d3f403e!2sR.%20Jim%20Clark%20-%20Parque%20dos%20Bancarios%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003923-165!5e0!3m2!1spt-BR!2sbr!4v1701203121105!5m2!1spt-BR!2sbr" width="500" height="200" style="border: 2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="product-image2" id="img-9">  </div>  
+        </section>
+        <footer class="footermain">
+            <a href="https://www.whatsapp.com/?lang=pt_BR">
+                <img src="imagens/whatsapp.png" alt="icone_whatzapp">
+             </a> 
+             <a href="https://www.facebook.com/profile.php?id=100085359031346">
+                <img src="imagens/facebook.png" alt="icone_facebook">
+             </a> 
+             <a href="https://www.tiktok.com/@andersonarruda34?_t=8hkLaCjihWg&_r=1">
+                <img src="imagens/tiktok1.png" alt="icone_tiktok">
+             </a> 
+             <a href="https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w">
+                <img src="imagens/youtube.png" alt="tcone_youtube">
+             </a> 
+         </footer> 
+
+      </main>
+   
+      <script src="index.js"></script>
+     </body>
+
+</html>
